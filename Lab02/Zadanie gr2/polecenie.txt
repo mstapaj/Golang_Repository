@@ -1,0 +1,9 @@
+Dla podanej liczby parzystej wyświetl dwie liczby pierwsze, które zsumowane dają podaną liczbę parzystą.
+Jeśli zostania podana liczba nieparzysta to wyświetl odpowiedni komunikat.
+
+Przykładowe wyniki:
+
+4 = 3 + 1
+12 = 5 + 7
+28 = 5 + 23
+Podana liczba musi byc liczba parzysta
