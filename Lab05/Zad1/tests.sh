@@ -1,3 +1,5 @@
 #!/bin/sh
 
-go run Zad5.go <&1 | go run Zad7.go >&0
+mkfifo myfifo
+<myfifo go run Zad7a.go | go run Zad7b.go | tee myfifo
+rm myfifo
