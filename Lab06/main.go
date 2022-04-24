@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 	"math/rand"
+	"os"
+	"os/exec"
 	"time"
 )
 
@@ -96,8 +98,15 @@ func main() {
 		}
 	}
 
-	for i := 0; i < 40; i++ {
-		time.Sleep(1000)
+	for i := 0; i < 100; i++ {
+		time.Sleep(400 * time.Millisecond)
+		// Czyszczenie konsoli, tylko dla Linux
+		cmd := exec.Command("clear")
+		cmd.Stdout = os.Stdout
+		err := cmd.Run()
+		if err != nil {
+			return
+		}
 		for _, strings := range tab {
 			fmt.Println(strings)
 		}
