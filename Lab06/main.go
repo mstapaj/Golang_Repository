@@ -111,7 +111,7 @@ func main() {
 			fmt.Println(strings)
 		}
 		for i, tabAnt := range tabAnts {
-			for {
+			for j := 0; j < 100; j++ {
 				addX := rand.Intn(3) - 1
 				addY := rand.Intn(3) - 1
 				if tabAnt.x+addX < 10 && tabAnt.y+addY < 10 && tabAnt.x+addX > 0 && tabAnt.y+addY > 0 && tab[tabAnt.x+addX][tabAnt.y+addY] == "_" {
@@ -126,7 +126,7 @@ func main() {
 					tabAnts[i] = tabAnt
 					break
 				} else if tabAnt.hasLeaf == true && tabAnt.x+addX < 10 && tabAnt.y+addY < 10 && tabAnt.x+addX > 0 && tabAnt.y+addY > 0 && tab[tabAnt.x+addX][tabAnt.y+addY] == "L" {
-					for {
+					for k := 0; k < 100; k++ {
 						leftLeafX := rand.Intn(3) - 1
 						leftLeafY := rand.Intn(3) - 1
 						if tabAnt.x+leftLeafX < 10 && tabAnt.y+leftLeafY < 10 && tabAnt.x+leftLeafX > 0 && tabAnt.y+leftLeafY > 0 && tab[tabAnt.x+leftLeafX][tabAnt.y+leftLeafY] == "_" {
