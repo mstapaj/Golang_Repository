@@ -1,2 +1,3 @@
-# Programowanie_w_jezyku_Golang
-Repozytorium stworzone na potrzeby przedmiotu Programowanie w jezyku Golang
+## Golang_Repository
+
+A repository for a task done on the Golang subject while studying at the University of Gdańsk.

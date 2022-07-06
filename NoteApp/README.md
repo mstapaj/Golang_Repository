@@ -1,11 +1,68 @@
-## Aplikacja z notatkami
+## Note App
 
-Aplikacja umożliwia tworzenie, edytowanie i usuwanie notatek, które są przechowywane w bazie danych MongoDB. Dodatkowo jest możliwość tworzenia, edytowania, usuwania jednej szybkiej notatki, która jest przechowywana w bazie danych Redis. 
+The application allows you to create, edit and delete notes that are stored in a MongoDB database. In addition, it is possible to create, edit, delete one quick note that is stored in the Redis database. The frontend was made in JavaScript/React and the backend was made in Go. The project was made for a Golang course at the University of Gdańsk.
 
-Frontend aplikacji został wykonany w JavaScript (React), natomiast backend został wykonany w Go.
+## Project Status
 
-## Zrzuty ekranu
+Project completed on 19 June 2022
+
+## Screenshots
 
 ![](./screenshots/1.png)
 ![](./screenshots/2.png)
 ![](./screenshots/3.png)
+
+## Technologies Used
+
+#### JavaScript
+
+-   axios
+-   formik
+-   prettier
+-   react
+-   react-dom
+-   react-router-dom
+-   react-scripts
+-   sass
+-   yup
+
+#### Go
+
+-   go-redis
+-   gorilla/mux
+-   cors
+-   mgo.v2/bson
+-   net/http
+-   toml
+
+## Installation and Setup Instructions
+
+Before starting the project, you must start the MongoDB database. You can run it using Docker. You need to install Docker, then use the command to start the MongoDB container.
+
+`docker run -dp 27017:27017 --name mongodb mongo`
+
+Clone down this repository. You will need go, node and npm/yarn installed globally on your machine.
+
+#### Backend
+
+Installation:
+
+`go get ./`
+
+To Start App:
+
+`go run main.go`
+
+#### Frontend
+
+Installation:
+
+`npm install` or `yarn install`
+
+To Start App:
+
+`npm start` or `yarn start`
+
+To Visit App:
+
+`https://localhost:3000/`

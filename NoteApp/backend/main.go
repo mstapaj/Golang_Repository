@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	c "backend/config"
 	d "backend/dao"
 	"backend/models"
@@ -163,6 +164,7 @@ func main() {
 	handler := cors.New(cors.Options{
 		AllowedMethods: []string{"GET", "POST", "DELETE", "PUT"},
 	}).Handler(r)
+	fmt.Println("App listening on port 5000")
 	if err := http.ListenAndServe(":5000", handler); err != nil {
 		log.Fatal(err)
 	}
