@@ -37,9 +37,11 @@ Project completed on 19 June 2022
 
 ## Installation and Setup Instructions
 
-Before starting the project, you must start the MongoDB database. You can run it using Docker. You need to install Docker, then use the command to start the MongoDB container.
+Before starting the project, you must start MongoDB and Redis databases. You can run it using Docker. You need to install Docker, then use the command to start MongoDB and Redis containers.
 
 `docker run -dp 27017:27017 --name mongodb mongo`
+`docker run -dp 6379:6379 --name redis redis`
+
 
 Clone down this repository. You will need go, node and npm/yarn installed globally on your machine.
 
