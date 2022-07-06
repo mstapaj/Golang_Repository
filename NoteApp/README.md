@@ -40,6 +40,7 @@ Project completed on 19 June 2022
 Before starting the project, you must start MongoDB and Redis databases. You can run it using Docker. You need to install Docker, then use the command to start MongoDB and Redis containers.
 
 `docker run -dp 27017:27017 --name mongodb mongo`
+
 `docker run -dp 6379:6379 --name redis redis`
 
 
